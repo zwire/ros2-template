@@ -1,4 +1,13 @@
-#include "vehicle_node.hpp"
+#include <rclcpp/rclcpp.hpp>
+#include "rclcpp_components/register_node_macro.hpp"
+#include "custom_component/vehicle_node.hpp"
+
+namespace custom_component
+{
+
+VehicleNode::VehicleNode(
+  const rclcpp::NodeOptions& options
+) : VehicleNode("", options){}
 
 VehicleNode::VehicleNode(
   const std::string& name_space, 
@@ -29,3 +38,7 @@ VehicleNode::VehicleNode(
     }
   );
 }
+
+}
+
+RCLCPP_COMPONENTS_REGISTER_NODE(custom_component::VehicleNode)
