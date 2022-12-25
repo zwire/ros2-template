@@ -27,7 +27,7 @@ ament_target_dependencies(
 rclcpp_components_register_node(
   vehicle_node 
   PLUGIN "custom_component::VehicleNode"
-  EXECUTABLE vehicle
+  EXECUTABLE exe
 )
 
 target_compile_definitions(vehicle_node PRIVATE "CUSTOM_COMPONENT_BUILDING_LIBRARY")
