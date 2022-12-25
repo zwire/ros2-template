@@ -23,7 +23,7 @@ rclcpp_components_register_node(
 ```
 
 <node_name>はパッケージ作成時に決めたもの。<namespace::Class>も決まっています。サンプルではcustom_component::VehicleNodeです。  
-<preferred_name>は実行方法3で使えるショートカット名です。呼びやすい名前をつけましょう。  
+<preferred_name>は実行方法3で使えるショートカット名です。呼びやすい名前をつけましょう。個人的には"exe"とつけます。  
 準備は以上です。ビルドしましょう。  
 
 ```
@@ -69,10 +69,10 @@ ex) ros2 component standalone custom_component custom_component::VehicleNode
 3. 任意の名前で実行
 ```
 ros2 run <pkg_name> <preferred_name>
-ex) ros2 run custom_component vehicle
+ex) ros2 run custom_component exe
 ```
 
-いいですね。  
+いいですね。普通にnodeを作る場合と同じ呼び方ができました。  
 さらに，componentの良いところはROSのnodeletに相当するメモリの共有，すなわち単一プロセスで複数nodeを動かせる点です。  
 考え方としては，先にコンテナを立ち上げ，そこにcomponent化したnodeをloadする(放り込んでいく)感じです。  
 
