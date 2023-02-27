@@ -1,7 +1,5 @@
 # custom_component
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/husty530/ros2-template)  
-
 C++でのライブラリファイルの作り方です。  
 なかなか仕組みがややこしくてコピペでは作れないと思うので，コマンドで作成してからこのテンプレとの差分を埋める感じで作っていただけたらと思います。  
 まずは以下のコマンドを打ちます。依存関係を後から付け足すのはめんどいので，ここでちゃんと書きましょう。  
