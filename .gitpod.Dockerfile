@@ -1,5 +1,5 @@
-FROM ubuntu:22.04
-ENV DISTRO humble
+FROM gitpod/workspace-full
+ENV DISTRO foxy
 
 USER gitpod
 
