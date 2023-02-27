@@ -1,5 +1,7 @@
 # ros2-template
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/husty530/ros2-template)  
+
 階層構造とCMakeLists.txtの書き方をわかりやすくテンプレ化するために作成したリポジトリです。  
 
 ![vscode](https://user-images.githubusercontent.com/64026753/209474507-373ec575-671e-4f60-9e7a-088f6fd967f7.gif)  
