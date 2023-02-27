@@ -4,7 +4,7 @@
   <name>custom_component</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="husty530@gmail.com">ymst</maintainer>
+  <maintainer email="husty530@gmail.com">husty</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
