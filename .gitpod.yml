@@ -6,5 +6,6 @@ tasks:
       echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
       sudo apt update && sudo apt upgrade -y && sudo apt install -y ros-${DISTRO}-ros-base python3-argcomplete ros-dev-tools && \
       echo "source /opt/ros/${DISTRO}/setup.bash" >> ~/.bashrc && source ~/.bashrc && \
-      sudo apt install -y python3-colcon-common-extensions && colcon build && \
+      sudo apt install -y python3-colcon-common-extensions && \
+      pip install empy catkin_pkg lark numpy && colcon build && \
       echo "source /workspace/ros2-template/install/setup.bash" >> ~/.bashrc && source ~/.bashrc
